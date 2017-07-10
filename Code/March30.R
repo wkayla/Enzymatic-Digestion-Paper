@@ -17,7 +17,7 @@ library("xtable")
 
 
 #Read in Data
-mypath<-"C:/Users/wkayla/Desktop/Microbiome/Enzyme Digest/Data/EnzymeDigest_Workspace_1_OTU.txt"
+mypath<-"path.txt"
 data=read.table(mypath, header = T, sep="\t",na.strings= "na")
 
 
@@ -121,7 +121,7 @@ data=read.table(mypath, header = T, sep="\t",na.strings= "na")
           
 ########################################### Alpha Diversity ##############################################
 
-    diver=read.table("C:/Users/Connie/Desktop/Microbiome/Enyme Digest/diversity.csv",header=T,sep=",")
+    diver=read.table("path.csv",header=T,sep=",")
     diver=as.data.frame(diver)
     diver$category=c(rep(1:2,42),rep(3:4,39))
     
